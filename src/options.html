@@ -1,0 +1,42 @@
+<!doctype html>
+<meta charset="utf-8">
+<title data-i18n="extName"></title>
+<style>
+  :root { color-scheme: light dark; font: 14px system-ui, sans-serif; }
+  body { max-width: 34rem; margin: 1.5rem auto; padding: 0 1rem; }
+  label { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin: .9rem 0 0; }
+  label.check { justify-content: flex-start; }
+  input[type=number] { width: 5rem; }
+  small { display: block; opacity: .7; margin-top: .15rem; }
+</style>
+
+<h1 data-i18n="extName"></h1>
+
+<label><span data-i18n="optRadius"></span>
+  <input id="radius" type="number" min="0" max="500"></label>
+<small data-i18n="optRadiusHint"></small>
+
+<label><span data-i18n="optMinLength"></span>
+  <input id="minLength" type="number" min="1" max="500"></label>
+
+<label class="check"><input id="linkOpen" type="checkbox"><span data-i18n="optLinkOpen"></span></label>
+<label class="check"><input id="skipFields" type="checkbox"><span data-i18n="optSkipFields"></span></label>
+
+<label><span data-i18n="optOpenIn"></span>
+  <select id="openIn">
+    <option value="new" data-i18n="openNew"></option>
+    <option value="current" data-i18n="openCurrent"></option>
+  </select></label>
+<label class="check"><input id="background" type="checkbox"><span data-i18n="optBackground"></span></label>
+
+<label><span data-i18n="optReverseKey"></span>
+  <select id="reverseKey">
+    <option value="none" data-i18n="modNone"></option>
+    <option value="shift" data-i18n="modShift"></option>
+    <option value="ctrl" data-i18n="modCtrl"></option>
+    <option value="alt" data-i18n="modAlt"></option>
+  </select></label>
+<small data-i18n="optReverseKeyHint"></small>
+
+<script src="defaults.js"></script>
+<script src="options.js"></script>

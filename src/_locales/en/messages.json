@@ -1,0 +1,56 @@
+{
+  "extName": {
+    "message": "Select, Middle-Click, Search"
+  },
+  "extDescription": {
+    "message": "Middle-click selected text to search it with your default search engine, or to open it if it is a link."
+  },
+  "commandDescription": {
+    "message": "Search / open link for selected text"
+  },
+  "optRadius": {
+    "message": "Hit radius (px)"
+  },
+  "optRadiusHint": {
+    "message": "How far from the selected text a middle-click still counts. 0 = only directly on the selection."
+  },
+  "optMinLength": {
+    "message": "Minimum selection length (characters)"
+  },
+  "optBackground": {
+    "message": "Open new tabs in the background"
+  },
+  "optLinkOpen": {
+    "message": "Open selected text that looks like a URL instead of searching"
+  },
+  "optSkipFields": {
+    "message": "Ignore text selected in input fields and text areas"
+  },
+  "modNone": {
+    "message": "None"
+  },
+  "modShift": {
+    "message": "Shift"
+  },
+  "modCtrl": {
+    "message": "Ctrl"
+  },
+  "modAlt": {
+    "message": "Alt"
+  },
+  "optOpenIn": {
+    "message": "Open results in"
+  },
+  "openNew": {
+    "message": "New tab"
+  },
+  "openCurrent": {
+    "message": "Current tab"
+  },
+  "optReverseKey": {
+    "message": "Modifier key: reverse new / current tab"
+  },
+  "optReverseKeyHint": {
+    "message": "Hold this key while middle-clicking to do the opposite of the setting above."
+  }
+}

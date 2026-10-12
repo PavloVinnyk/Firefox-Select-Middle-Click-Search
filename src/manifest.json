@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_extName__",
+  "version": "1.0.0",
+  "description": "__MSG_extDescription__",
+  "default_locale": "en",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "permissions": ["search", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "scripts": ["defaults.js", "background.js"] },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["defaults.js", "content.js"],
+      "all_frames": true,
+      "match_about_blank": true
+    }
+  ],
+  "commands": {
+    "trigger-action": { "description": "__MSG_commandDescription__" }
+  },
+  "options_ui": { "page": "options.html" },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{f76fe68e-34b8-4e96-855e-d98eb2d9e9bf}",
+      "strict_min_version": "128.0",
+      "data_collection_permissions": { "required": ["none"] }
+    }
+  }
+}
